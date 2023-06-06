@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #520001;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container h1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: #d3a625;
+  margin-top: 30px;
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Goudy Bookletter 1911", serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1:hover {
+  cursor: pointer;
+  animation: animate 10.5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(0px);
   }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.search-button {
+  background-color: #004016;
+  border: 3px solid #000000b5;
+  border-radius: 5px;
+  width: 150px;
+  margin-left: 10px;
+  color: #bfefd0;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2), 2px 0 4px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.2), -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #bfefd0;
+  color: #740001;
+}
+
+input {
+  background-color: #bfefd0;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+form {
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 380px;
+}
+
+select {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 300px;
+  padding: 10px;
+  border: 3px solid #000000c2;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #d3a425;
+
+  color: #0e1a40;
+  font-family: "Cinzel Decorative", cursive;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2), 2px 0 4px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.2), -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  color: #651e09;
+  cursor: pointer;
+}
+
+.card-title {
+  margin-top: 5px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.7rem;
+  margin-bottom: 5px;
+}
+
+.house-title {
+  color: #1a472a;
+}
+
+.wand {
+  color: #f9e1a0;
+}
+
+.wand:hover {
+  color: #651e09;
+  cursor: pointer;
+}
+
+.patronus {
+  color: #f9e1a0;
+}
+
+.patronus:hover {
+  color: #651e09;
+  cursor: pointer;
+}
+
+.bookname {
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-item {
+  color: #bfefd0;
+  background-color: #1a472a;
+  border: 2px solid black;
+  margin-top: 15px;
+  display: flex;
+  margin-right: 15px;
+  width: 40px;
+  text-align: center;
+  font-size: 1.3rem;
+  justify-content: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2), 2px 0 4px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.2), -2px 0 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.page-item:hover {
+  background-color: #bfefd0;
+  color: #740001;
+  font-weight: bold;
+  border: 2px solid black;
 }
